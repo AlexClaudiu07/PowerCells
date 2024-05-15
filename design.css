@@ -1,0 +1,585 @@
+* {
+    font-family: 'Poppins', Arial;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    padding-bottom: 100px; /* Asigură spațiu pentru footer */
+}
+.header {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 4px solid #39b54a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navzone {
+    display: flex;
+    align-items: center;
+}
+
+.navzone a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.logo {
+    height: 55px;
+    margin-left: 100px;
+}
+
+.social-i, .social-y, .social-t {
+    border: 0;
+    position: relative;
+    right: -575px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.social-i:hover, .social-y:hover, .social-t:hover {
+    border: 0;
+    position: relative;
+    right: -575px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.social-i:hover {
+    background: rgb(255, 119, 142);
+}
+.social-y:hover {
+    background: red;
+}
+.social-t:hover {
+    background: rgb(21, 21, 21);
+}
+.pages {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.pages:hover {
+    box-shadow: 1px 1px 10px rgba(4, 84, 29, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(53, 255, 80, 0.5);
+}
+
+/* Home Page */
+.home {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 5px solid #39b54a;
+}
+#check {
+    color: white;
+    background: #39b54a;
+    padding: 6px;
+    border-radius: 50px;
+}
+.home-h1 {
+    margin: 20px;
+}
+/* Home Page */
+.home {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 5px solid #39b54a;
+    background: white;
+}
+
+.info1, .info2 {
+    display: flex;
+    align-items: center;
+}
+.info1,.info2 {
+    border: 2px solid #39b54a;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.info2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info1 #check, .info2 #check {
+    margin-right: 10px; /* Spațiu între iconiță și text */
+}
+
+.home-title {
+    margin: 0;
+}
+
+.green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #39b54a;
+    z-index: -1; /* Plasare in spatele div-ului home */
+}
+.gray {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    z-index: -1; /* Plasare in spatele div-ului home */
+}
+
+/* CSS pentru footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    position:  relative;
+    bottom: -100px    ;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+    color: rgb(150, 150, 150);
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 1;
+    color: whitesmoke;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    color: #39b54a;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+    position:  relative;
+    bottom: -50px   ;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em;
+}
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.testimonial {
+    width: 30%; /* Modificăm lățimea pentru a încadra trei testimoniale */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+.about-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.about-card h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* Stilizare fondatori */
+/* Stilizare fondatori */
+.founders {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.founder {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder:hover {
+    transform: translateY(-10px);
+}
+
+.founder img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #f9f9f9;
+    object-fit: cover; /* Va asigura că imaginea va umple complet zona ovalei */
+    object-position: center; /* Poziționează imaginea în centrul zonei ovale */
+}
+
+.founder p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Stilizare imagine mascata oval */
+.founder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    mask-image: radial-gradient(circle farthest-side at center, transparent -10000%, black 100%);
+    mask-size: contain;
+}
+/* Contact Card Styles */
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+/* CSS Styles for Products */
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.product .price {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.product .description {
+    margin-top: 10px;
+    color: #666;
+    font-size: 16px;
+}
+/* Stil pentru formularul de contact */
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    .header {
+        padding: 10px 5px; /* Reduce padding-ul pentru bara de navigație */
+    }
+    .social-i, .social-y, .social-t {
+        display: none; /* Ascunde butoanele sociale pe ecrane mici */
+    }
+
+
+    .logo {
+        margin-left: 20px; /* Reducem marginea stângă a logo-ului */
+        height: 40px; /* Reducem înălțimea logo-ului pentru ecrane mici */
+    }
+
+    .navzone a {
+        margin: 0 10px; /* Reducem margin-ul pentru link-uri în bara de navigație */
+    }
+
+    .social-i, .social-y, .social-t {
+        right: -375px; /* Ajustăm poziționarea butoanelor sociale */
+    }
+
+    .home {
+        margin-left: 20px; /* Reducem marginea stângă a secțiunii home */
+        margin-right: 20px; /* Reducem marginea dreaptă a secțiunii home */
+    }
+
+    .info1, .info2 {
+        flex-direction: column; /* Schimbăm direcția de dispunere a informațiilor */
+        text-align: center; /* Aliniem textul la centru pe ecrane mici */
+    }
+
+    .info1, .info2 {
+        margin-left: 0; /* Eliminăm marginile laterale pentru informații */
+        margin-right: 0;
+    }
+
+    .footer-section {
+        margin-right: 100px; /* Reducem margin-right pentru secțiunile footer-ului */
+    }
+
+    .testimonials {
+        flex-direction: column; /* Schimbă direcția de dispunere pe coloană */
+        align-items: center; /* Aliniază elementele pe axa orizontală */
+    }
+
+    .testimonial {
+        width: 90%; /* Ajustează lățimea pentru a se potrivi cu lățimea ecranului */
+        margin-bottom: 20px; /* Adaugă un spațiu între testimoniale */
+    }
+    .green {
+        width: 150%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .gray {
+        height: 1250px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Aliniere centrală a conținutului */
+        margin: 50px auto; /* Margini pentru a separa cardul de marginile paginii */
+    }
+    
+    .about-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        max-width: 600px;
+        margin: 0 auto; /* Plasare card în centrul paginii */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Distribuirea uniformă a spațiului între elementele din card */
+        align-items: center;
+        margin-bottom: 20px; /* Spațiu între card și următorul element */
+    }
+    
+    .about-info {
+        flex: 1;
+        margin-right: 20px; /* Margin dreapta pentru a separa conținutul de imagine */
+    }
+    
+    .about-image img {
+        max-width: 200px;
+        border-radius: 8px;
+    }
+    /* Stil pentru formularul de contact */
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limităm lățimea formularului pentru a evita întinderea prea mult pe ecrane mari */
+    margin-left: auto; /* Centrăm formularul pe orizontală */
+    margin-right: auto; /* Centrăm formularul pe orizontală */
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asigurăm că padding-ul nu crește lățimea input-urilor */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+    
+}
+@media only screen and (max-width: 480px) {
+    .logo {
+        margin-left: 10px; /* Reducem marginea stângă a logo-ului și mai mult */
+        height: 30px; /* Reducem înălțimea logo-ului pentru ecrane foarte mici */
+    }
+
+    .navzone a {
+        margin: 0 5px; /* Reducem și mai mult margin-ul pentru link-uri în bara de navigație */
+    }
+
+    .social-i, .social-y, .social-t {
+        right: -275px; /* Ajustăm poziționarea butoanelor sociale */
+    }
+
+    .footer-section {
+        margin-right: 10px; /* Reducem și mai mult margin-right pentru secțiunile footer-ului */
+    }
+}
